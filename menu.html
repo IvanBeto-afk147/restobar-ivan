@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RestoBar Ivan: comidas, bebidas y postres preparados con ingredientes de calidad.">
+  <title>Menú | RestoBar Ivan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo"><i class="fa-solid fa-utensils"></i><span>RestoBar <strong>Ivan</strong></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html" class="">Inicio</a></li><li><a href="menu.html" class="active">Menú</a></li><li><a href="nosotros.html" class="">Nosotros</a></li><li><a href="galeria.html" class="">Galería</a></li><li><a href="pedidos.html" class="">Pedidos</a></li><li><a href="administracion.html" class="">Administración</a></li></ul>
+  </nav>
+</header>
+<main>
+<section class="page-banner"><div class="container"><span class="section-subtitle">NUESTROS PRODUCTOS</span><h1>Nuestro menú</h1><p>Explora nuestras comidas, bebidas y postres.</p></div></section><section class="menu-section section-padding" id="menu">
+<div class="container">
+<div class="section-heading">
+<span class="section-subtitle">NUESTROS PRODUCTOS</span>
+<h2>Descubre nuestro menú</h2>
+<p>Elige tus productos favoritos y realiza tu pedido.</p>
+</div>
+<div class="menu-tools">
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input aria-label="Buscar productos" id="buscador" placeholder="Buscar un producto..." type="search"/>
+</div>
+<div class="filter-buttons">
+<button class="filter-btn active" data-category="Todos">Todos</button>
+<button class="filter-btn" data-category="Comidas">Comidas</button>
+<button class="filter-btn" data-category="Bebidas">Bebidas</button>
+<button class="filter-btn" data-category="Postres">Postres</button>
+</div>
+</div>
+<div class="menu-grid" id="menuGrid">
+<p class="loading-message">Cargando nuestro menú...</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <a href="index.html" class="logo"><i class="fa-solid fa-utensils"></i><span>RestoBar <strong>Ivan</strong></span></a>
+      <p>El sabor que hace especial cada momento.</p>
+    </div>
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2026 RestoBar Ivan. Todos los derechos reservados.</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

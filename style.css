@@ -994,3 +994,238 @@ button {
     }
 }
 
+
+/* Navegación entre páginas */
+.nav-links a.active {
+    color: var(--primary);
+    position: relative;
+}
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+}
+.page-banner {
+    padding: 65px 0;
+    text-align: center;
+    background: var(--cream);
+}
+.page-banner h1 {
+    margin: 10px 0;
+    color: var(--dark);
+    font-size: clamp(32px, 5vw, 48px);
+}
+.page-banner p {
+    color: var(--gray);
+}
+
+/* =========================================
+   DISEÑO RESPONSIVO - RESTOBAR IVAN
+   ========================================= */
+
+/* Evitar desbordamientos */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: min(92%, 1200px);
+    margin-inline: auto;
+}
+
+/* TABLETS Y PANTALLAS MEDIANAS */
+@media (max-width: 950px) {
+
+    .about-container,
+    .reservation-container {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+}
+
+/* TELÉFONOS Y TABLETS PEQUEÑAS */
+@media (max-width: 750px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    /* El menú se muestra cuando JavaScript
+       agrega una de estas clases al nav */
+    .nav-links.show,
+    .nav-links.open,
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 70px 0;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-container,
+    .reservation-container {
+        gap: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .admin-tools {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-tools .btn {
+        width: 100%;
+    }
+
+    .orders-heading {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+/* TELÉFONOS PEQUEÑOS */
+@media (max-width: 520px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .hero {
+        min-height: 460px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle,
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .menu-grid,
+    .gallery-grid,
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card,
+    .stat-card,
+    .order-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .reservation-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .reservation-form input,
+    .reservation-form textarea,
+    .reservation-form select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .page-banner {
+        padding: 55px 0;
+        text-align: center;
+    }
+
+    .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .btn {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
