@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RestoBar Ivan: comidas, bebidas y postres preparados con ingredientes de calidad.">
+    <title>RestoBar Ivan | Restaurante</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                <span>RestoBar <strong>Ivan</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Nuestro menú</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#reservas">Realizar pedido</a></li>
+                <li><a href="#pedidos">Administración</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section class="hero" id="inicio">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <span class="hero-subtitle">BIENVENIDO A RESTOBAR IVAN</span>
+                <h1>El sabor que hace especial cada momento</h1>
+                <p>
+                    Disfruta de deliciosas comidas, bebidas refrescantes
+                    y postres preparados especialmente para ti.
+                </p>
+
+                <a href="#menu" class="btn">
+                    Explorar nuestro menú
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- MENÚ -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-subtitle">NUESTROS PRODUCTOS</span>
+                    <h2>Descubre nuestro menú</h2>
+                    <p>Elige tus productos favoritos y realiza tu pedido.</p>
+                </div>
+
+                <div class="menu-tools">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                            type="search"
+                            id="buscador"
+                            placeholder="Buscar un producto..."
+                            aria-label="Buscar productos">
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="Todos">Todos</button>
+                        <button class="filter-btn" data-category="Comidas">Comidas</button>
+                        <button class="filter-btn" data-category="Bebidas">Bebidas</button>
+                        <button class="filter-btn" data-category="Postres">Postres</button>
+                    </div>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <p class="loading-message">Cargando nuestro menú...</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="about-section section-padding" id="nosotros">
+            <div class="container about-container">
+
+                <div class="about-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000"
+                        alt="Ambiente de restaurante">
+                </div>
+
+                <div class="about-content">
+                    <span class="section-subtitle">CONÓCENOS</span>
+                    <h2>Más que un restaurante, una experiencia de sabor</h2>
+
+                    <p>
+                        En RestoBar Ivan queremos ofrecerte una experiencia
+                        agradable, con comidas deliciosas, bebidas refrescantes
+                        y postres que puedas disfrutar en cualquier momento.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es brindarte una atención amable,
+                        productos de calidad y sabores que te inviten a volver.
+                    </p>
+
+                    <a href="#reservas" class="btn">
+                        Realizar un pedido
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="gallery-section section-padding" id="galeria">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-subtitle">NUESTRO RESTAURANTE</span>
+                    <h2>Galería de sabores</h2>
+                    <p>Un vistazo a lo que puedes disfrutar en RestoBar Ivan.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800"
+                            alt="Plato de fideos">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+                            alt="Hamburguesa especial">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800"
+                            alt="Pizza">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?w=800"
+                            alt="Bebida refrescante">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800"
+                            alt="Torta de chocolate">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800"
+                            alt="Helado">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE PEDIDOS -->
+        <section class="reservation-section section-padding" id="reservas">
+            <div class="container reservation-container">
+
+                <div class="reservation-info">
+                    <span class="section-subtitle">HAZ TU PEDIDO</span>
+                    <h2>Disfruta de tus favoritos</h2>
+
+                    <p>
+                        Selecciona un producto de nuestro menú, completa tus
+                        datos y confirma tu pedido.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Atención y pedidos: todos los días.</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Comidas, bebidas y postres.</span>
+                    </div>
+                </div>
+
+                <form id="reservationForm" class="reservation-form">
+
+                    <h3>Realiza tu pedido</h3>
+
+                    <div class="order-details">
+                        <p><strong>Producto seleccionado:</strong></p>
+                        <p id="pedidoSeleccionado">
+                            Todavía no seleccionaste ningún producto.
+                        </p>
+                        <p id="precioSeleccionado"></p>
+                    </div>
+
+                    <input type="hidden" id="productoPedido">
+
+                    <label for="cantidadPedido">Cantidad</label>
+                    <input
+                        type="number"
+                        id="cantidadPedido"
+                        min="1"
+                        max="50"
+                        value="1"
+                        required>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Tu nombre"
+                        required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        placeholder="ejemplo@correo.com"
+                        required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Tu número de teléfono"
+                        required>
+
+                    <label for="fecha">Fecha de entrega o retiro</label>
+                    <input type="date" id="fecha" required>
+
+                    <label for="mensaje">Dirección o indicaciones adicionales</label>
+                    <textarea
+                        id="mensaje"
+                        rows="3"
+                        placeholder="Escribe aquí tus indicaciones"></textarea>
+
+                    <div class="order-total">
+                        <span>Total de tu pedido:</span>
+                        <strong id="totalPedido">Bs 0.00</strong>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">
+                        Confirmar mi pedido
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+        <!-- PANEL DE ADMINISTRACIÓN -->
+        <section class="admin-section section-padding" id="pedidos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-subtitle">GESTIÓN DEL RESTAURANTE</span>
+                    <h2>Panel de administración</h2>
+                    <p>Consulta y administra los pedidos registrados en este navegador.</p>
+                </div>
+
+                <div class="admin-stats">
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <p>Total de pedidos</p>
+                            <h3 id="totalPedidos">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <div>
+                            <p>Pendientes</p>
+                            <h3 id="pedidosPendientes">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div>
+                            <p>Completados</p>
+                            <h3 id="pedidosCompletados">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <div>
+                            <p>Ventas registradas</p>
+                            <h3 id="ventasTotales">Bs 0.00</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="admin-tools">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                            type="search"
+                            id="buscarPedido"
+                            placeholder="Buscar por cliente o producto...">
+                    </div>
+
+                    <button class="btn" id="actualizarPedidos" type="button">
+                        <i class="fa-solid fa-rotate"></i>
+                        Actualizar
+                    </button>
+                </div>
+
+                <div class="orders-heading">
+                    <h3>Pedidos registrados</h3>
+                    <span id="cantidadPedidos">0 pedidos</span>
+                </div>
+
+                <div class="orders-container" id="listaPedidos">
+                    <p class="no-orders">Todavía no hay pedidos registrados.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <i class="fa-solid fa-utensils"></i>
+                    <span>RestoBar <strong>Ivan</strong></span>
+                </a>
+                <p>El sabor que hace especial cada momento.</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="#inicio" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#inicio" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#inicio" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 RestoBar Ivan. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
