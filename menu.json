@@ -1,90 +1,514 @@
 [
-    {
-        "id": 1,
-        "nombre": "Fideos Salteados",
-        "descripcion": "Deliciosos fideos salteados con vegetales frescos y una combinación especial de sabores.",
-        "precio": 35,
-        "categoria": "Comidas",
-        "imagen": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=700"
-    },
-    {
-        "id": 2,
-        "nombre": "Hamburguesa Especial",
-        "descripcion": "Hamburguesa artesanal con carne, queso, vegetales y salsa de la casa.",
-        "precio": 40,
-        "categoria": "Comidas",
-        "imagen": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
-    },
-    {
-        "id": 3,
-        "nombre": "Pizza Especial",
-        "descripcion": "Pizza preparada con queso, salsa de tomate e ingredientes seleccionados.",
-        "precio": 55,
-        "categoria": "Comidas",
-        "imagen": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
-    },
-    {
-        "id": 4,
-        "nombre": "Pollo a la Plancha",
-        "descripcion": "Pechuga de pollo a la plancha acompañada de guarniciones.",
-        "precio": 45,
-        "categoria": "Comidas",
-        "imagen": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=700"
-    },
-    {
-        "id": 5,
-        "nombre": "Limonada Natural",
-        "descripcion": "Limonada refrescante preparada con limones naturales y hielo.",
-        "precio": 12,
-        "categoria": "Bebidas",
-        "imagen": "images/limonada-natural.webp"
-    },
-    {
-        "id": 6,
-        "nombre": "Jugo de Frutilla",
-        "descripcion": "Jugo de frutillas frescas, preparado naturalmente.",
-        "precio": 15,
-        "categoria": "Bebidas",
-        "imagen": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=700"
-    },
-    {
-        "id": 7,
-        "nombre": "Coca-Cola",
-        "descripcion": "Gaseosa Coca-Cola bien fría, ideal para acompañar tus comidas.",
-        "precio": 10,
-        "categoria": "Bebidas",
-        "imagen": "images/coca-cola.jfif"
-    },
-    {
-        "id": 8,
-        "nombre": "Sprite",
-        "descripcion": "Gaseosa Sprite refrescante con sabor a limón.",
-        "precio": 10,
-        "categoria": "Bebidas",
-        "imagen": "images/sprite.jfif"
-    },
-    {
-        "id": 9,
-        "nombre": "Fanta",
-        "descripcion": "Gaseosa Fanta con delicioso sabor a naranja.",
-        "precio": 10,
-        "categoria": "Bebidas",
-        "imagen": "images/fanta.webp"
-    },
-    {
-        "id": 10,
-        "nombre": "Torta de Chocolate",
-        "descripcion": "Suave torta de chocolate con una deliciosa cobertura.",
-        "precio": 18,
-        "categoria": "Postres",
-        "imagen": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700"
-    },
-    {
-        "id": 11,
-        "nombre": "Helado Especial",
-        "descripcion": "Helado cremoso con diferentes sabores y acompañamientos.",
-        "precio": 15,
-        "categoria": "Postres",
-        "imagen": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700"
-    }
+  {
+    "id": 1,
+    "nombre": "Fideos Salteados",
+    "descripcion": "Deliciosos fideos salteados con vegetales frescos y una combinación especial de sabores.",
+    "precio": 16,
+    "categoria": "Comidas",
+    "imagen": "https://gourmet.iprospect.cl/wp-content/uploads/2024/12/TALLARIN.png",
+    "ingredientes": "Fideos, carne, zanahoria, pimentón, cebolla, salsa de soya y especias."
+  },
+  {
+    "id": 2,
+    "nombre": "Hamburguesa Especial",
+    "descripcion": "Hamburguesa artesanal con carne, queso, vegetales y salsa de la casa.",
+    "precio": 25,
+    "categoria": "Comidas",
+    "imagen": "images/hamburguesa-especial.webp",
+    "ingredientes": "Pan, carne de res, queso, lechuga, tomate, cebolla y salsa de la casa."
+  },
+  {
+    "id": 3,
+    "nombre": "Pizza Especial",
+    "descripcion": "Pizza preparada con queso, salsa de tomate e ingredientes seleccionados.",
+    "precio": 55,
+    "categoria": "Comidas",
+    "imagen": "images/pizza-especial.webp",
+    "ingredientes": "Masa, salsa de tomate, queso mozzarella, jamón, aceitunas y orégano."
+  },
+  {
+    "id": 4,
+    "nombre": "Pollo a la Plancha",
+    "descripcion": "Pechuga de pollo a la plancha acompañada de guarniciones.",
+    "precio": 18,
+    "categoria": "Comidas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_RMjRWByGmUXHYcr-wi8qnQlKB-I-72x94M6tI4dvrRk8YrJy61F9M5_&s=10",
+    "ingredientes": "Pechuga de pollo, ajo, limón, especias y guarnición del día."
+  },
+  {
+    "id": 5,
+    "nombre": "Limonada Natural",
+    "descripcion": "Limonada refrescante preparada con limones naturales y hielo.",
+    "precio": 6,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://cdn.shopify.com/s/files/1/0173/8181/8422/files/20251107122234-creamy-20lemonade.png?v=1762518156&width=1600&height=900",
+    "ingredientes": "Limón natural, agua, hielo y azúcar al gusto.",
+    "alcoholico": false
+  },
+  {
+    "id": 6,
+    "nombre": "Jugo de Frutilla",
+    "descripcion": "Jugo de frutillas frescas, preparado naturalmente.",
+    "precio": 8,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRw-t6jxRNzJuGrg_VMd2lf4UFSCXmeEm_3LRsoYHghi3drEF75zZxnc&s=10",
+    "ingredientes": "Frutillas frescas, agua o leche, hielo y azúcar al gusto.",
+    "alcoholico": false
+  },
+  {
+    "id": 7,
+    "nombre": "Coca-Cola",
+    "descripcion": "Gaseosa Coca-Cola bien fría, ideal para acompañar tus comidas.",
+    "precio": 22,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://fsa.bo/productos/04432-01.jpg",
+    "ingredientes": "Bebida gaseosa Coca-Cola servida fría.",
+    "alcoholico": false
+  },
+  {
+    "id": 8,
+    "nombre": "Sprite",
+    "descripcion": "Gaseosa Sprite refrescante con sabor a limón.",
+    "precio": 22,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAFoJrSuUQM5_DE2W0Bx_DKRECkIdxfe9utdy8cBm_gFXpDCWazYCOGk&s=10",
+    "ingredientes": "Bebida gaseosa Sprite con sabor a limón, servida fría.",
+    "alcoholico": false
+  },
+  {
+    "id": 9,
+    "nombre": "Fanta",
+    "descripcion": "Gaseosa Fanta con delicioso sabor a naranja.",
+    "precio": 22,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://walmartgt.vtexassets.com/arquivos/ids/415987/Gaseosa-Fanta-naranja-regular-3-L-1-27590.jpg?v=638330998547300000",
+    "ingredientes": "Bebida gaseosa Fanta sabor naranja, servida fría.",
+    "alcoholico": false
+  },
+  {
+    "id": 10,
+    "nombre": "Torta de Chocolate",
+    "descripcion": "Suave torta de chocolate con una deliciosa cobertura.",
+    "precio": 60,
+    "categoria": "Postres",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtlAtU0bXBauxCDK2IRvAWo-lYEly-cfHBg1uzntHZ0-aicul00BQ6QVU&s=10",
+    "ingredientes": "Bizcocho de chocolate, cacao, harina, huevos, azúcar y cobertura."
+  },
+  {
+    "id": 11,
+    "nombre": "Helado Especial",
+    "descripcion": "Helado cremoso con diferentes sabores y acompañamientos.",
+    "precio": 15,
+    "categoria": "Postres",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu0Ot5WGx772hNrJ2tHx0LcVBscBVcXSUCgp0eNfiGc2h-_GHfP3KNd8Su&s=10",
+    "ingredientes": "Helado cremoso con sabores y acompañamientos a elección."
+  },
+  {
+    "id": 12,
+    "nombre": "Sopa de Maní",
+    "descripcion": "Tradicional sopa cremosa de maní con carne, verduras y papa, terminada con perejil fresco.",
+    "precio": 13,
+    "categoria": "Sopas",
+    "imagen": "https://chipabythedozen.com/wp-content/uploads/2022/06/sopa-de-mani-boliviana-500x500.jpg",
+    "ingredientes": "Maní molido, carne de res, papa, zanahoria, arvejas, cebolla, ajo y perejil."
+  },
+  {
+    "id": 13,
+    "nombre": "Sopa de Fideo",
+    "descripcion": "Caldo casero reconfortante con fideos, verduras y trozos de carne.",
+    "precio": 13,
+    "categoria": "Sopas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnKhwqyw_uRl2AewQKpBaPYNokaRzyHgHyyYhWlrp68LGKD7BSuLKpVo&s=10",
+    "ingredientes": "Fideo, carne, papa, zanahoria, cebolla, ajo, apio y hierbas."
+  },
+  {
+    "id": 14,
+    "nombre": "Sopa de Zapallo",
+    "descripcion": "Sopa suave y cremosa de zapallo, preparada con verduras y un toque de hierbas.",
+    "precio": 13,
+    "categoria": "Sopas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2Z-djBbRf2g8U_b9taKGHCUGexDacRzPpI6H03WMs7CXsBmSeSXclBc&s=10",
+    "ingredientes": "Zapallo, papa, cebolla, ajo, caldo de verduras, leche opcional y perejil."
+  },
+  {
+    "id": 15,
+    "nombre": "Majadito",
+    "descripcion": "Arroz sabroso con charque, huevo frito y plátano, un clásico de la cocina cruceña.",
+    "precio": 18,
+    "categoria": "Almuerzos",
+    "imagen": "https://i.pinimg.com/736x/aa/bd/a2/aabda270c95a018b6801b18d8098f8b4.jpg",
+    "ingredientes": "Arroz, charque, urucú, cebolla, pimentón, huevo y plátano maduro."
+  },
+  {
+    "id": 16,
+    "nombre": "Pique Macho",
+    "descripcion": "Generosa combinación de carne, salchicha, papas fritas, huevo y vegetales.",
+    "precio": 20,
+    "categoria": "Almuerzos",
+    "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Pique_macho.jpg/1280px-Pique_macho.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "ingredientes": "Carne de res, salchicha, papa, huevo, tomate, cebolla, locoto y mostaza."
+  },
+  {
+    "id": 17,
+    "nombre": "Salpicón",
+    "descripcion": "Plato fresco de carne desmenuzada con verduras y acompañamientos.",
+    "precio": 18,
+    "categoria": "Almuerzos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEu9flS3xMbYK0td3H9N8Vd0wRNHtOd1S34Ee8hbopnaSceXqO5tqtrUb8&s=10",
+    "ingredientes": "Carne de res desmenuzada, papa, zanahoria, arvejas, tomate, cebolla y lechuga."
+  },
+  {
+    "id": 18,
+    "nombre": "Keperi",
+    "descripcion": "Keperi de res cocido lentamente, acompañado de arroz, yuca y ensalada.",
+    "precio": 25,
+    "categoria": "Almuerzos",
+    "imagen": "https://gastronomiabolivia.com/wp-content/uploads/Keperi-beniano.jpg",
+    "ingredientes": "Keperi de res, ajo, limón, condimentos, arroz, yuca y ensalada fresca."
+  },
+  {
+    "id": 19,
+    "nombre": "Pescado a la Parrilla",
+    "descripcion": "Pescado a la parrilla con limón y hierbas, acompañado de arroz y ensalada.",
+    "precio": 25,
+    "categoria": "Almuerzos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9pycEgUqyV27lnIbLcrtfe76W4GMbAfG50SSVOHukbv6wH-c7XnXY5Fs&s=10",
+    "ingredientes": "Pescado, limón, ajo, perejil, especias, arroz y ensalada."
+  },
+  {
+    "id": 20,
+    "nombre": "Locro de gallina criolla",
+    "descripcion": "Caldo tradicional con gallina, arroz y verduras, de sabor casero.",
+    "precio": 15.0,
+    "categoria": "Sopas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmOlrXJzUW7q9QCP9TS8fSZj2NRU7-w0sIqy6zCW07ouha05kW_YGAM8IM&s=10",
+    "ingredientes": "Gallina, arroz, papa, cebolla, zanahoria, ajo, urucú y hierbas.",
+    "alcoholico": false
+  },
+  {
+    "id": 21,
+    "nombre": "Locro carretero",
+    "descripcion": "Preparación camba de caldo sustancioso con charque y arroz.",
+    "precio": 15.0,
+    "categoria": "Sopas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB4QUvT5MdWll9a7QMq6gODptHkfa51zknHOcL32c_mFn5WSK1_hhByeI&s=10",
+    "ingredientes": "Charque, arroz, yuca, cebolla, ajo, urucú y condimentos.",
+    "alcoholico": false
+  },
+  {
+    "id": 22,
+    "nombre": "Patasca cruceña",
+    "descripcion": "Sopa tradicional de maíz con carne, preparada lentamente.",
+    "precio": 18.0,
+    "categoria": "Sopas",
+    "imagen": "https://recetasbolivia.com/wp-content/uploads/Patasca-Camba-de-santa-Cruz-500x400.webp",
+    "ingredientes": "Maíz, carne de cerdo o res, cebolla, ajo, comino y hierbas.",
+    "alcoholico": false
+  },
+  {
+    "id": 23,
+    "nombre": "Caldo de pata",
+    "descripcion": "Caldo reconfortante de cocción lenta con verduras.",
+    "precio": 15.0,
+    "categoria": "Sopas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRphoQTWTWWFgEQWXv5ZuYlMB4i6B_5dErhHzonA92P-cuT_0LG7H4OiIma&s=10",
+    "ingredientes": "Pata de res, papa, cebolla, ajo, zanahoria y hierbas.",
+    "alcoholico": false
+  },
+  {
+    "id": 24,
+    "nombre": "Sopa de arroz con queso",
+    "descripcion": "Sopa suave y casera con arroz y queso.",
+    "precio": 18.0,
+    "categoria": "Sopas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4w3AmPXy1C9x878HcyMSy85i2_LL2rw2Q_0wfHDNBTbwq2OSuD4pUO8_&s=10",
+    "ingredientes": "Arroz, queso, leche, cebolla, papa y hierbas.",
+    "alcoholico": false
+  },
+  {
+    "id": 25,
+    "nombre": "Majadito de charque",
+    "descripcion": "Arroz batido con charque, urucú, huevo frito y plátano.",
+    "precio": 25.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS9JLaNx_lknbdcfdQhtofDxMl3C5YATqstLNYrhUjdo1XGtr7oedFcxU&s=10",
+    "ingredientes": "Arroz, charque, urucú, cebolla, pimentón, huevo y plátano.",
+    "alcoholico": false
+  },
+  {
+    "id": 26,
+    "nombre": "Majadito de pato",
+    "descripcion": "Versión tradicional de majadito preparada con pato.",
+    "precio": 25.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://estaticos-noticias.unitel.bo/binrepository/600x274/0c0/0d0/none/125450566/XRCL/majadito-de-pato_1459159693_1140x520_UN157544_MG147237064.JPG",
+    "ingredientes": "Arroz, pato, urucú, cebolla, pimentón y condimentos.",
+    "alcoholico": false
+  },
+  {
+    "id": 27,
+    "nombre": "Keperí al horno",
+    "descripcion": "Carne de res cocida lentamente, acompañada de yuca y arroz.",
+    "precio": 30.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://gastronomiabolivia.com/wp-content/uploads/Keperi-beniano.jpg",
+    "ingredientes": "Keperí de res, ajo, limón, arroz, yuca y ensalada.",
+    "alcoholico": false
+  },
+  {
+    "id": 28,
+    "nombre": "Pacumuto de res",
+    "descripcion": "Brochetas de carne a la parrilla al estilo camba.",
+    "precio": 25.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://gastronomiabolivia.com/wp-content/uploads/pacumuto-bolivia.jpg",
+    "ingredientes": "Carne de res, sal, pimienta, yuca y ensalada.",
+    "alcoholico": false
+  },
+  {
+    "id": 29,
+    "nombre": "Masaco de plátano con queso",
+    "descripcion": "Plátano verde majado con queso, ideal para compartir.",
+    "precio": 15.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdRB_LXHznwuf061k01nXrIl4yLzm2A0Uj0UDqZRSlPTn4Y7Q7SQMiu2Y&s=10",
+    "ingredientes": "Plátano verde, queso y manteca.",
+    "alcoholico": false
+  },
+  {
+    "id": 30,
+    "nombre": "Masaco de yuca",
+    "descripcion": "Yuca cocida y majada con queso o charque.",
+    "precio": 15.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzHl1lnLRRPlLP-0oLpHXM5jm-iJnuRWc-K0wRXEM3hJ3lWq-lx3WmZk&s=10",
+    "ingredientes": "Yuca, queso o charque y manteca.",
+    "alcoholico": false
+  },
+  {
+    "id": 31,
+    "nombre": "Sonso de yuca",
+    "descripcion": "Preparación horneada de yuca y queso, dorada por fuera.",
+    "precio": 15.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://enfoquenews.com.bo/wp-content/uploads/2025/03/sonso.jpg",
+    "ingredientes": "Yuca, queso, leche y mantequilla.",
+    "alcoholico": false
+  },
+  {
+    "id": 32,
+    "nombre": "Cuñapé",
+    "descripcion": "Panecillo tradicional elaborado con almidón de yuca y queso.",
+    "precio": 3.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://recetasbolivia.com/wp-content/uploads/Cunapes-Bolivianos.jpg",
+    "ingredientes": "Almidón de yuca, queso, huevo y leche.",
+    "alcoholico": false
+  },
+  {
+    "id": 33,
+    "nombre": "Locro de gallina (plato)",
+    "descripcion": "Locro de gallina criolla servido como plato tradicional.",
+    "precio": 15.0,
+    "categoria": "Almuerzos",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ--UNxibyZNc381N9RnYSFmNIiKYHDGpaSaosjMy0R8hE74HbITk7kdYo&s=10",
+    "ingredientes": "Gallina, arroz, papa, cebolla, zanahoria y hierbas.",
+    "alcoholico": false
+  },
+  {
+    "id": 34,
+    "nombre": "Cerveza nacional",
+    "descripcion": "Cerveza bien fría para acompañar una buena comida.",
+    "precio": 15.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEtcWfQxnOXfLMGAdicbN-T45Ph1VyWWWCHxsiQOzkVvJL1qsD0RN20Moc&s=10",
+    "ingredientes": "Cerveza de cebada. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 35,
+    "nombre": "Vino tinto por copa",
+    "descripcion": "Copa de vino tinto para acompañar la comida.",
+    "precio": 25.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://www.hipermaxi.com/_next/image?url=%2Fapi%2Fimage-proxy%3Furl%3Dhttps%253A%252F%252Fhipermaxi.com%252Ftienda-api%252Fmarketfile%252FImageEcommerce%253Fhashfile%253Da3ab2e1_3f92_4fe2_9dde_61f6242c4289.jpg%2526co%253D5%2526size%253D900x900&w=3840&q=75",
+    "ingredientes": "Vino de uva fermentada. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 36,
+    "nombre": "Vino blanco por copa",
+    "descripcion": "Vino blanco servido frío.",
+    "precio": 25.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://tienda.cristar.com.co/cdn/shop/articles/COPAS-PARA-VINO-BLANCO-1_4af0f64c-6899-4a1e-a7cb-8c3b3496beba.jpg?v=1789500189&width=1600",
+    "ingredientes": "Vino de uva fermentada. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 37,
+    "nombre": "Mojito clásico",
+    "descripcion": "Cóctel refrescante de hierbabuena, limón y ron.",
+    "precio": 32.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGskW4kNFBba3SwPRkyLoLQL3fCI77k8lM6SUMCh2EIA-5tD0FhJTCY20&s=10",
+    "ingredientes": "Ron, hierbabuena, limón, azúcar, soda y hielo. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 38,
+    "nombre": "Margarita",
+    "descripcion": "Cóctel cítrico preparado con tequila y limón.",
+    "precio": 35.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe3CGK3wr2pdo2SRDyQys-Bin48l8tY0DjBakze0lb2o9UWe_CbQnn21JH&s=10",
+    "ingredientes": "Tequila, licor de naranja, limón y hielo. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 39,
+    "nombre": "Cuba libre",
+    "descripcion": "Combinación clásica de ron, cola y limón.",
+    "precio": 30.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0UyUzi50CDrR-X1FYlMMQyfAZYM3AU_U3KtQWJvciZ9YdznyRxFT7-dw&s=10",
+    "ingredientes": "Ron, gaseosa cola, limón y hielo. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 40,
+    "nombre": "Cóctel tropical de la casa",
+    "descripcion": "Mezcla frutal preparada al momento.",
+    "precio": 35.0,
+    "categoria": "Bebidas alcohólicas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgjAccXF2C_WsMf14-CVfIfNZYwlmwvWrIRGkTap9Tut9l4F_-PgKDb1g&s=10",
+    "ingredientes": "Ron, jugos tropicales y hielo. Contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 41,
+    "nombre": "Jugo natural de naranja",
+    "descripcion": "Jugo preparado con naranjas frescas.",
+    "precio": 15.0,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://www.clarin.com/2022/08/21/KfHICuhUX_2000x1500__1.jpg",
+    "ingredientes": "Naranja fresca y hielo opcional.",
+    "alcoholico": false
+  },
+  {
+    "id": 42,
+    "nombre": "Limonada con hierbabuena",
+    "descripcion": "Limonada fresca con un toque aromático.",
+    "precio": 15.0,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://cdn.shopify.com/s/files/1/0173/8181/8422/files/20251107122234-creamy-20lemonade.png?v=1762518156&width=1600&height=900",
+    "ingredientes": "Limón, agua, hierbabuena, hielo y azúcar.",
+    "alcoholico": false
+  },
+  {
+    "id": 43,
+    "nombre": "Jugo de mango",
+    "descripcion": "Bebida frutal preparada con mango.",
+    "precio": 16.0,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZa79YA6k7UyeO5BvM45O31iZhfgIP5vg66gp6p28M0tP0_hFOE5MMgCRY&s=10",
+    "ingredientes": "Mango, agua o leche, hielo y azúcar.",
+    "alcoholico": false
+  },
+  {
+    "id": 44,
+    "nombre": "Jugo de piña",
+    "descripcion": "Jugo natural de piña refrescante.",
+    "precio": 15.0,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHuCP0tLepJQAmWyaWeH90pxqHzXoxIZ8QEK5V9sHSD-oimqP8t91Wr3E&s=10",
+    "ingredientes": "Piña, agua y hielo.",
+    "alcoholico": false
+  },
+  {
+    "id": 45,
+    "nombre": "Agua mineral",
+    "descripcion": "Agua mineral servida fría.",
+    "precio": 8.0,
+    "categoria": "Bebidas sin alcohol",
+    "imagen": "https://www.superdia.pe/cdn/shop/files/Agua_Mineral_San_Luis_sin_Gas_Botella_3L_super_dia.jpg?v=1769123342",
+    "ingredientes": "Agua mineral.",
+    "alcoholico": false
+  },
+  {
+    "id": 46,
+    "nombre": "Somó",
+    "descripcion": "Bebida tradicional camba a base de maíz, servida fría.",
+    "precio": 12.0,
+    "categoria": "Bebidas tradicionales",
+    "imagen": "https://i.ytimg.com/vi/1ae2l67kUX8/maxresdefault.jpg",
+    "ingredientes": "Maíz, agua, canela y clavo de olor.",
+    "alcoholico": false
+  },
+  {
+    "id": 47,
+    "nombre": "Mocochinchi",
+    "descripcion": "Refresco tradicional de durazno deshidratado y especias.",
+    "precio": 12.0,
+    "categoria": "Bebidas tradicionales",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4FtwmzUHvSTKoI7YIJMZR3NVRMNM-iGe1X-banMaD4ExPtZHE-1K0zyQ&s=10",
+    "ingredientes": "Durazno deshidratado, agua, canela, clavo y azúcar.",
+    "alcoholico": false
+  },
+  {
+    "id": 48,
+    "nombre": "Chicha camba",
+    "descripcion": "Bebida tradicional de maíz; su preparación puede ser fermentada.",
+    "precio": 14.0,
+    "categoria": "Bebidas tradicionales",
+    "imagen": "https://i.ytimg.com/vi/ItLuUV0AdEw/sddefault.jpg",
+    "ingredientes": "Maíz y agua; consultar si la preparación contiene alcohol.",
+    "alcoholico": true
+  },
+  {
+    "id": 49,
+    "nombre": "Refresco de tamarindo",
+    "descripcion": "Refresco agridulce preparado con pulpa de tamarindo.",
+    "precio": 12.0,
+    "categoria": "Bebidas tradicionales",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6YgUY8PRvpmUQwCZNOfqlB2gs1F-BYwBxnfhh0D7XCucZEKlsm_7maQkt&s=10",
+    "ingredientes": "Tamarindo, agua y azúcar.",
+    "alcoholico": false
+  },
+  {
+    "id": 50,
+    "nombre": "Hamburguesa Simple",
+    "descripcion": "Hamburguesa clásica con carne, vegetales frescos y salsa.",
+    "precio": 40,
+    "categoria": "Comidas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQihQkb0gpb6nsI8SVQ3XTneQAsQt1UZQlumeXKhQ_PGDhCpPE17PTxXmgT&s=10",
+    "ingredientes": "Pan, carne de res, lechuga, tomate y salsa."
+  },
+  {
+    "id": 51,
+    "nombre": "Hamburguesa con Papas",
+    "descripcion": "Hamburguesa acompañada de una porción de papas fritas.",
+    "precio": 35,
+    "categoria": "Comidas",
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQC58sN6GfULce59v5nLjYFCPh9_ZAcbngkcX_o6K5NBnj_wVir75pFa7&s=10",
+    "ingredientes": "Pan, carne de res, lechuga, tomate, salsa y papas fritas."
+  },
+  {
+    "id": 52,
+    "nombre": "Pizza Cuatro Quesos",
+    "descripcion": "Pizza con una combinación cremosa de cuatro variedades de queso.",
+    "precio": 65,
+    "categoria": "Comidas",
+    "imagen": "https://www.hola.com/horizon/landscape/e8bb41b65869-pizzacuatroquesos-adob-t.jpg",
+    "ingredientes": "Masa, salsa de tomate y mezcla de cuatro quesos."
+  },
+  {
+    "id": 53,
+    "nombre": "Pizza Margarita",
+    "descripcion": "Pizza clásica con salsa de tomate, mozzarella y albahaca.",
+    "precio": 65,
+    "categoria": "Comidas",
+    "imagen": "https://cdn.shopify.com/s/files/1/0173/8181/8422/files/20250702221210-screenshot-202025-07-02-20at-206.png?v=1751494332&width=1600&height=900",
+    "ingredientes": "Masa, salsa de tomate, queso mozzarella, tomate y albahaca."
+  }
 ]

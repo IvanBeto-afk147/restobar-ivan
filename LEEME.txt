@@ -1,22 +1,42 @@
-# RestoBar Ivan - Sitio web multipágina
+RESTOBAR IVAN - SITIO WEB MULTIPÁGINA
 
-## Archivos principales
-- `index.html`: Inicio
-- `menu.html`: Menú de comidas, bebidas y postres
-- `nosotros.html`: Información del restaurante
-- `galeria.html`: Galería de imágenes
-- `pedidos.html`: Formulario para realizar pedidos
-- `administracion.html`: Panel de administración
-- `style.css`: Diseño y estilos compartidos
-- `script.js`: Navegación y funcionalidades
-- `menu.json`: Productos
-- `images/`: Imágenes locales
+PÁGINAS PRINCIPALES
+- index.html: Inicio y especialidades destacadas.
+- menu.html: Catálogo completo, búsqueda y filtros.
+- bebidas.html: Bebidas alcohólicas, sin alcohol y tradicionales cruceñas.
+- sopas.html: Página dedicada a las sopas.
+- almuerzos.html: Página dedicada a almuerzos tradicionales.
+- nosotros.html: Información del restaurante.
+- galeria.html: Fotografías e ingredientes de los productos.
+- pedidos.html: Formulario de pedidos.
+- administracion.html: Administración local de pedidos.
+- contactenos.html: Contacto y consultas por WhatsApp.
 
-## Cómo probar
-1. Extrae toda la carpeta del ZIP.
-2. Abre la carpeta en Visual Studio Code.
-3. Ejecuta `index.html` con Live Server.
-4. Usa la barra superior para navegar entre las páginas.
+ARCHIVOS
+- menu.json: Catálogo de productos, precios, categorías, imágenes, ingredientes e indicador de bebidas alcohólicas.
+- style.css: Estilos compartidos y diseño adaptable.
+- script.js: Navegación, catálogo, galería, pedidos y administración.
+- images/: Fotografías locales de los productos.
 
-## Importante sobre los pedidos
-Los pedidos se guardan en `localStorage` del navegador. Por eso, el panel de administración solo muestra los pedidos guardados en ese mismo navegador y dispositivo. Esta práctica no utiliza una base de datos ni un sistema de administración protegido para varios usuarios.
+CÓMO PROBAR
+1. Extrae la carpeta completa.
+2. Abre la carpeta RestoBar_Ivan en Visual Studio Code.
+3. Abre index.html con Live Server.
+4. Prueba los enlaces del menú, búsqueda, categorías y pedidos.
+
+PRECIOS
+Los precios de los ocho productos nuevos son sugerencias iniciales editables en menu.json. Confirma los precios reales antes de publicar.
+
+PEDIDOS Y LIMITACIONES
+Los pedidos se guardan en localStorage del navegador. La administración solo ve los pedidos guardados en ese mismo navegador/dispositivo. Para uso real con varios clientes se necesita una base de datos y autenticación segura. El formulario de contacto abre WhatsApp con el mensaje preparado; el usuario debe pulsar Enviar.
+
+
+NUEVA ORGANIZACIÓN DE BEBIDAS
+- Brindis de la Casa: bebidas alcohólicas.
+- Refrescos del Paraíso: bebidas sin alcohol.
+- Herencia Camba: bebidas tradicionales cruceñas.
+Las bebidas alcohólicas requieren confirmación de mayoría de edad (18+). La chicha puede variar según su preparación; verificar si contiene alcohol antes de ofrecerla.
+
+IMPORTANTE SOBRE LOS PEDIDOS
+La aplicación de esta versión registra los pedidos en localStorage. Esto significa que los pedidos solo están disponibles en el mismo navegador y dispositivo. No constituye un sistema de pedidos compartido entre clientes y administración. Para producción se requiere un backend/base de datos y autenticación segura.
+Los precios añadidos son referenciales; revisarlos y sustituirlos por los precios reales antes de publicar. Algunas fotografías son enlaces externos y requieren conexión a Internet.

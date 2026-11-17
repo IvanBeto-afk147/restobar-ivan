@@ -1,0 +1,6 @@
+Se añadieron 16 imágenes originales generadas para el catálogo.
+Corresponden a los primeros 16 productos del menu.json.
+Las imágenes restantes conservan sus rutas originales y requieren una siguiente tanda para sustituirlas por fotografías originales específicas.
+
+
+Actualización de bebidas: se añadieron imágenes WebP locales para cervezas, vinos, cócteles, jugos y bebidas tradicionales. Las rutas de bebidas en menu.json apuntan a la carpeta images; no dependen de enlaces externos. Las imágenes son ilustrativas y los precios deben confirmarse antes de publicar.

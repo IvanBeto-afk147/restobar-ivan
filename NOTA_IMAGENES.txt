@@ -1,0 +1,5 @@
+IMÁGENES INTEGRADAS - RESTOBAR IVAN
+
+Se actualizaron las rutas de imagen en menu.json con las direcciones facilitadas para los platos y bebidas.
+Las fotografías se cargan desde los sitios externos de origen; por eso requieren conexión a Internet y podrían dejar de mostrarse si el servidor de origen cambia la dirección o bloquea el acceso externo.
+Para Patasca cruceña se utilizó la dirección directa .webp compartida anteriormente.
